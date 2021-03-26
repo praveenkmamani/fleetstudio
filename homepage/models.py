@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-# Create your models here.
 
+# The below class is the model of the Profile table
 class Profile(models.Model):
     profileUser = models.ForeignKey(User, on_delete=models.CASCADE)
     firstName = models.CharField(max_length=50)
